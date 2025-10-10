@@ -19,32 +19,37 @@ export default function ProjectCard({
   description,
 }: Props) {
   return (
-    <div className="bg-white rounded-2xl shadow-md overflow-hidden hover:shadow-lg transition transform">
-      {/* クリック不要なので button → div に変更 */}
-      <div className="w-full text-left cursor-default">
+    <div className="group bg-white/90 backdrop-blur-sm rounded-2xl shadow-md overflow-hidden hover:shadow-xl hover:-translate-y-1 transition-all duration-300 border border-gray-200">
+      {/* サムネイル */}
+      <div className="relative w-full h-48 overflow-hidden">
         <Image
           src={imageSrc}
           alt={`Project ${id}`}
-          width={600}
-          height={400}
-          className="w-full h-40 object-cover"
+          fill
+          className="object-cover group-hover:scale-105 transition-transform duration-500"
         />
-        <div className="p-4">
-          <h3 className="text-lg text-gray-800 font-bold">{title}</h3>
-          <p className="text-sm text-gray-600 mt-1">技術: {tech}</p>
-        </div>
       </div>
 
-      {/* 詳細は常に表示 */}
-      <div className="px-4 pb-4 text-sm text-gray-700 transition-all duration-300">
-        <p className="mt-2">{description}</p>
-        <Link href={`/projects/${id}`}>
-          <span className="inline-block mt-3 text-blue-500 hover:underline">
-            ▶ 詳細ページへ
+      {/* 内容 */}
+      <div className="p-5">
+        <h3 className="text-xl font-semibold text-gray-800">{title}</h3>
+        <p className="text-sm text-gray-500 mt-1">技術: {tech}</p>
+
+        <p className="text-gray-700 text-sm mt-3 line-clamp-3">
+          {description}
+        </p>
+
+        {/* 詳細リンク */}
+        <Link
+          href={`/projects/${id}`}
+          className="inline-flex items-center mt-4 text-purple-600 hover:text-purple-800 font-medium transition"
+        >
+          <span>詳細を見る</span>
+          <span className="ml-1 transition-transform group-hover:translate-x-1">
+            →
           </span>
         </Link>
       </div>
     </div>
   );
 }
-
