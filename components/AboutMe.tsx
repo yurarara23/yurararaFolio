@@ -10,11 +10,11 @@ export default function AboutMe() {
       {/* 自己紹介・経歴 */}
       <div className="space-y-4 text-gray-300 leading-relaxed">
         <p>
-          現在は大学で情報系を専攻しており、Web開発やAI応用に興味を持っています。
+          現在は大学で情報系を専攻しており、Web開発やAIの応用に興味を持っています。
           フロントエンドでは <strong>Next.js / TypeScript</strong> を中心に学習・制作を進めています。
         </p>
         <p>
-          また <strong>Unity + VRC SDK</strong> を使ったゲーム開発も行っており、
+          またUnityを使ったゲーム開発も行っており、
           VRを使ったインタラクティブな体験づくりに関心があります。
         </p>
         <p>
@@ -43,12 +43,9 @@ export default function AboutMe() {
             "React",
             "TypeScript",
             "Python",
-            "VitePress",
             "Unity",
             "C#",
-            "VRC SDK",
             "TailwindCSS",
-            "OpenAI API",
           ].map((tech) => (
             <span
               key={tech}
@@ -70,7 +67,6 @@ export default function AboutMe() {
           <li>生成AIを使ったアプリやBotの開発</li>
           <li>VRのワールド、ゲーム制作</li>
           <li>UI/UXデザインとアニメーション演出</li>
-          <li>自作ツールやウェブサービスの公開</li>
         </ul>
       </div>
     </section>

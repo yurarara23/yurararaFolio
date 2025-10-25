@@ -71,7 +71,7 @@ const projects = [
 export default function ProjectList() {
   return (
     <section className="py-16 px-4 max-w-6xl mx-auto">
-      <h2 className="text-2xl font-semibold mb-8 text-center">- 制作物一覧 -</h2>
+      <h2 className="text-2xl font-semibold mb-8 text-center">- 制作物一覧 -（改装中）</h2>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
         {projects.map((project) => (
           <ProjectCard key={project.id} {...project} />
