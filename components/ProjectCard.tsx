@@ -1,7 +1,6 @@
 "use client";
 
 import Image from "next/image";
-import Link from "next/link";
 
 type Props = {
   id: number;
@@ -9,6 +8,7 @@ type Props = {
   imageSrc: string;
   tech: string;
   description: string;
+  url: string;
 };
 
 export default function ProjectCard({
@@ -17,6 +17,7 @@ export default function ProjectCard({
   imageSrc,
   tech,
   description,
+  url,
 }: Props) {
   return (
     <div className="group bg-white/90 backdrop-blur-sm rounded-2xl shadow-md overflow-hidden hover:shadow-xl hover:-translate-y-1 transition-all duration-300 border border-gray-200">
@@ -39,17 +40,17 @@ export default function ProjectCard({
           {description}
         </p>
 
-        {/* 詳細リンク */}
-        <Link
-          href={`/projects/${id}`}
+        {/* 外部URLへ遷移 */}
+        <a
+          href={url}
+          target="_blank"
+          rel="noopener noreferrer"
           className="inline-flex items-center mt-4 text-purple-600 hover:text-purple-800 font-medium transition"
         >
           <span>詳細を見る</span>
-          <span className="ml-1 transition-transform group-hover:translate-x-1">
-            →
-          </span>
-        </Link>
+        </a>
       </div>
     </div>
   );
 }
+

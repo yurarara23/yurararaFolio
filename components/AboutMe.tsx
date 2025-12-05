@@ -11,11 +11,10 @@ export default function AboutMe() {
       <div className="space-y-4 text-gray-300 leading-relaxed">
         <p>
           現在は大学で情報工学を専攻しており、Web開発やAIの応用に興味を持っています。
-          フロントエンドでは <strong>Next.js / TypeScript</strong> を中心に学習・制作を進めています。
         </p>
         <p>
           またUnityを使ったゲーム開発も行っており、
-          VRを使ったインタラクティブな体験づくりに関心があります。
+          最近はVRを使ったインタラクティブな体験づくりをしています。
         </p>
         <p>
           現在は
@@ -45,7 +44,7 @@ export default function AboutMe() {
             "Python",
             "Unity",
             "C#",
-            "TailwindCSS",
+            "Go",
           ].map((tech) => (
             <span
               key={tech}
@@ -61,12 +60,12 @@ export default function AboutMe() {
       <div className="mt-12">
         <h3 className="text-xl font-semibold mb-4 flex items-center gap-2">
           <Rocket size={20} />
-          興味・取り組みたい分野
+          取り組みたい分野
         </h3>
         <ul className="list-disc list-inside space-y-2 text-gray-300">
-          <li>生成AIを使ったアプリやBotの開発</li>
-          <li>VRのワールド、ゲーム制作</li>
-          <li>UI/UXデザインとアニメーション演出</li>
+          <li>生成AIを応用したアプリやゲーム開発</li>
+          <li>インタラクティブなVRのワールド、ゲーム制作</li>
+          <li>Webアプリ開発</li>
         </ul>
       </div>
     </section>
