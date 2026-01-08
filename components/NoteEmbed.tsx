@@ -11,7 +11,7 @@ const noteUrls = [
 export default function NoteEmbed() {
   return (
     <div className="w-full flex flex-col items-center py-10">
-      <h2 className="text-3xl font-bold mb-10 text-center">- note -</h2>
+      <h2 className="text-3xl font-bold mb-10 text-center">note</h2>
 
       {noteUrls.map((url, i) => (
         <div
@@ -33,4 +33,3 @@ export default function NoteEmbed() {
     </div>
   );
 }
-

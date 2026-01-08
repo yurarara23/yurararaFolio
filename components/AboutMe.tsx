@@ -1,21 +1,15 @@
 "use client";
 
-import { Code, Apple } from "lucide-react";
-
 export default function AboutMe() {
   return (
     <section className="py-16 px-4 max-w-5xl mx-auto text-gray-300">
-      {/* 見出し */}
-      <h2 className="text-3xl font-bold mb-10 text-center">- About Me -</h2>
+      {/* About */}
+      <h2 className="text-3xl font-bold mb-10 text-center">About</h2>
 
-      {/* 自己紹介 */}
-      <div className="space-y-4 leading-relaxed text-center max-w-3xl mx-auto">
+      <div className="leading-relaxed text-center max-w-3xl mx-auto">
         <p>
-          現在は大学で情報工学を専攻しており、Web開発やAIの応用に興味を持っています。
-        </p>
-        <p>
-          Unity を使ったゲーム開発にも取り組んでおり、
-          最近は VR を使ったインタラクティブな体験づくりをしています。
+          大学で情報工学を専攻し、Webアプリケーション開発やAIの応用に関心を持って学ぶとともに、
+          Unityを用いたゲーム開発やVRを活用したインタラクティブな体験の設計・実装にも取り組んでいます。
         </p>
         <p>
           現在は{" "}
@@ -25,54 +19,90 @@ export default function AboutMe() {
             rel="noopener noreferrer"
             className="text-cyan-400 hover:underline"
           >
-            メタ創
+            大学の同期と立ち上げた自主制作団体
           </a>{" "}
-          に所属しており、主に Web サイトやゲームギミックの開発を担当しています。
+          に所属し、主にWebサイトやデジタルコンテンツの開発を行っています。
         </p>
       </div>
 
-      {/* 技術スタック */}
-      <div className="mt-16 text-center">
-        <h3 className="text-xl font-semibold mb-6 flex items-center justify-center gap-2">
-          <Code size={20} />
-          よく扱ってるもの
-        </h3>
+      {/* 所属 */}
+      <h2 className="text-3xl font-bold my-16 text-center">Organizations</h2>
 
-        <div className="flex flex-wrap justify-center gap-3">
-          {[
-            "Next.js",
-            "React",
-            "Vue",
-            "TypeScript",
-            "Python",
-            "Unity",
-            "C#",
-            "Go",
-          ].map((tech) => (
-            <span
-              key={tech}
-              className="px-3 py-1 text-sm bg-gray-800 border border-gray-700 rounded-full"
-            >
-              {tech}
-            </span>
-          ))}
+      <ul className="space-y-3 text-center">
+        <li>
+          日本大学 理工学部 応用情報工学科 B2
+          <a
+            href="https://www.ce.cst.nihon-u.ac.jp/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-cyan-400 ml-2 hover:underline"
+          >
+            Web
+          </a>
+        </li>
+        <li>
+          Nu.メタ創
+          <a
+            href="https://nu-meta.vercel.app/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-cyan-400 ml-2 hover:underline"
+          >
+            Web
+          </a>
+        </li>
+        <li>
+          全日本大学メタバース連盟
+          <a
+            href="https://numa-meta.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-cyan-400 ml-2 hover:underline"
+          >
+            Web
+          </a>
+        </li>
+      </ul>
+
+      {/* Skills */}
+      <div className="mt-20 grid grid-cols-1 md:grid-cols-2 gap-12 text-center">
+        {/* Skills */}
+        <div>
+          <h3 className="text-3xl font-bold mb-10 text-center">Skills</h3>
+
+          <ul className="space-y-2">
+            <li>Next.js / Vue / TypeScript</li>
+            <li>Python / Go</li>
+            <li>Unity / C# / Udon</li>
+            <li>TOEIC IP 720点（2024年）</li>
+          </ul>
         </div>
-      </div>
 
-      {/* 興味・やりたいこと */}
-      <div className="mt-16 text-center">
-        <h3 className="text-xl font-semibold mb-6 flex items-center justify-center gap-2">
-          <Apple size={20} />
-          取り組みたい分野
-        </h3>
+        {/* Achievements */}
+        <div>
+          <h3 className="text-3xl font-bold mb-10 text-center">Achievements</h3>
 
-        <ul className="space-y-3 text-gray-300">
-          <li>生成AIを応用したアプリやゲーム開発</li>
-          <li>インタラクティブな VR ワールド・ゲーム制作</li>
-          <li>Web アプリ開発</li>
-        </ul>
+          <ul className="space-y-6 max-w-xl mx-auto">
+            <li>
+              <p className="font-medium">
+                IVRC メタバース部門 せきぐちあいみ賞（2025年）
+              </p>
+              <p className="text-sm text-gray-400 mt-1">
+                プラン作成・ゲームシステム実装・ワールドデザインを担当
+              </p>
+            </li>
+
+            <li>
+              <p className="font-medium">
+                IVRC メタバース部門 入江英嗣賞（2025年）
+              </p>
+              <p className="text-sm text-gray-400 mt-1">
+                プラン作成・ゲームシステム実装・ワールドデザインを担当
+              </p>
+            </li>
+          </ul>
+        </div>
       </div>
     </section>
   );
 }
-

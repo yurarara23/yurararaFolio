@@ -19,7 +19,6 @@ export default function ProfileSection() {
 
       {/* 名前と紹介 */}
       <h1 className="text-4xl font-bold mb-2">yurarara</h1>
-      <p className="text-gray-400 mb-6">駆け出し開発者</p>
 
       {/* SNSリンク */}
       <div className="flex gap-6">
@@ -43,4 +42,3 @@ export default function ProfileSection() {
     </div>
   );
 }
-
