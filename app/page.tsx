@@ -1,6 +1,4 @@
-"use client";
-
-import HeaderSection from "@/components/HeaderSection";
+import ProfileSection from "@/components/ProfileSection";
 import ProjectList from "@/components/ProjectList";
 import AboutMe from "@/components/AboutMe";
 import NoteEmbed from "@/components/NoteEmbed";
@@ -8,7 +6,7 @@ import NoteEmbed from "@/components/NoteEmbed";
 export default function Home() {
   return (
     <main className="min-h-screen bg-black text-white">
-      <HeaderSection />
+      <ProfileSection />
       <AboutMe />
       <NoteEmbed />
       <ProjectList />

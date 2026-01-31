@@ -41,9 +41,6 @@ export default function ProjectCard({
         <div className="p-5">
           <h3 className="text-xl font-semibold text-gray-800">{title}</h3>
           <p className="text-sm text-gray-500 mt-1">技術: {tech}</p>
-          <p className="text-gray-700 text-sm mt-3 line-clamp-3">
-            {description}
-          </p>
         </div>
       </div>
 
@@ -84,13 +81,6 @@ export default function ProjectCard({
                 >
                   外部リンク →
                 </a>
-
-                <button
-                  onClick={() => setOpen(false)}
-                  className="px-4 py-2 rounded-lg bg-gray-100 hover:bg-gray-200 transition"
-                >
-                  閉じる
-                </button>
               </div>
             </div>
           </div>

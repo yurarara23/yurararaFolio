@@ -1,27 +1,14 @@
-"use client";
-
 export default function AboutMe() {
   return (
     <section className="py-16 px-4 max-w-5xl mx-auto text-gray-300">
       {/* About */}
-      <h2 className="text-3xl font-bold mb-10 text-center">About</h2>
+      <h2 className="text-3xl font-bold mb-10 text-center">About me</h2>
 
       <div className="leading-relaxed text-center max-w-3xl mx-auto">
         <p>
-          大学で情報工学を専攻し、Webアプリケーション開発やAIの応用に関心を持って学ぶとともに、
-          Unityを用いたゲーム開発やVRを活用したインタラクティブな体験の設計・実装にも取り組んでいます。
-        </p>
-        <p>
-          現在は{" "}
-          <a
-            href="https://nu-meta.vercel.app/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-cyan-400 hover:underline"
-          >
-            大学の同期と立ち上げた自主制作団体
-          </a>{" "}
-          に所属し、主にWebサイトやデジタルコンテンツの開発を行っています。
+          大学の情報工学科に所属し、WebやAI分野に関心を持って学習・実装に取り組んでいます。
+          Unityによるゲーム開発やVRを用いたインタラクティブ体験の制作も行っています。
+          現在はデジタルコンテンツを自主制作する団体に所属し、主に開発担当として活動しています。
         </p>
       </div>
 
@@ -37,7 +24,7 @@ export default function AboutMe() {
             rel="noopener noreferrer"
             className="text-cyan-400 ml-2 hover:underline"
           >
-            Web
+            HomePage
           </a>
         </li>
         <li>
@@ -48,7 +35,7 @@ export default function AboutMe() {
             rel="noopener noreferrer"
             className="text-cyan-400 ml-2 hover:underline"
           >
-            Web
+            HomePage
           </a>
         </li>
         <li>
@@ -59,7 +46,7 @@ export default function AboutMe() {
             rel="noopener noreferrer"
             className="text-cyan-400 ml-2 hover:underline"
           >
-            Web
+            HomePage
           </a>
         </li>
       </ul>
@@ -74,7 +61,7 @@ export default function AboutMe() {
             <li>Next.js / Vue / TypeScript</li>
             <li>Python / Go</li>
             <li>Unity / C# / Udon</li>
-            <li>TOEIC IP 720点（2024年）</li>
+            <li>TOEIC IP 720点</li>
           </ul>
         </div>
 
@@ -88,7 +75,7 @@ export default function AboutMe() {
                 IVRC メタバース部門 せきぐちあいみ賞（2025年）
               </p>
               <p className="text-sm text-gray-400 mt-1">
-                プラン作成・ゲームシステム実装・ワールドデザインを担当
+                プラン・システム・ワールドデザイン担当
               </p>
             </li>
 
@@ -97,7 +84,7 @@ export default function AboutMe() {
                 IVRC メタバース部門 入江英嗣賞（2025年）
               </p>
               <p className="text-sm text-gray-400 mt-1">
-                プラン作成・ゲームシステム実装・ワールドデザインを担当
+                プラン・システム・ワールドデザイン担当
               </p>
             </li>
           </ul>

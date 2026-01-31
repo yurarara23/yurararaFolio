@@ -4,7 +4,6 @@ import Script from "next/script";
 
 const noteUrls = [
   "https://note.com/embed/notes/n0acbba516c84",
-  "https://note.com/embed/notes/n4901ac8e5149",
   "https://note.com/embed/notes/n42f9a756cf2e",
 ];
 
