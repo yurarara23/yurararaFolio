@@ -58,7 +58,7 @@ export default function AboutMe() {
           <h3 className="text-3xl font-bold mb-10 text-center">Skills</h3>
 
           <ul className="space-y-2">
-            <li>Next.js / Vue / TypeScript</li>
+            <li>Next.js / React / TypeScript</li>
             <li>Python / Go</li>
             <li>Unity / C# / Udon</li>
             <li>TOEIC IP 720点</li>
